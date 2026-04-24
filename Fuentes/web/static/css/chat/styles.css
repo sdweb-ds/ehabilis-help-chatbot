@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap');
+
+:root {
+    --primary: #084359;
+    --primary-medium: #e5f0f4;
+    --primary-light: #eef4f4;
+    --primary-lighter: #f5f6f9;
+    --text-color: #3c3c3b;
+    --font-family: 'Poppins', Arial, Helvetica, sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    /*Layouts*/
+    --AlturaAcciones: calc(var(--acciones-height) * 1px);
+    /*****************************************************/
+    font-family: var(--font-family);
+    font-size: 16px;
+
+    #chat {
+        --avatar-size: 60px;
+        --icon-size: 30px;
+        --msg-radius: 1.5rem;
+        position: relative;
+
+        #contenedor {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            height: calc(100vh - var(--AlturaAcciones) - 85px); /*40 px es el padding-block de contenedor y el de acciones */
+
+            .mensaje {
+                --gap: 10px;
+                display: flex;
+                gap: var(--gap);
+                padding-block: 10px;
+
+                .avatar {
+                    width: var(--avatar-size);
+                    height: var(--avatar-size);
+                    aspect-ratio: 1;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        max-height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .cuerpo {
+                    flex: 1 1 calc(100% - var(--avatar-size) - var(--gap));
+
+                    .texto {
+                        width: fit-content;
+                        padding: 10px 20px;
+                        margin-bottom: 5px;
+                        border-radius: var(--radius);
+                        background-color: var(--bg-color);
+                        color: var(--text-color);
+                        box-shadow: -2px 2px 5px var(--primary-medium);
+                    }
+
+                    .fecha {
+                        font-size: small;
+                        color: darkgray;
+                    }
+                }
+
+                &.soporte {
+                    --bg-color: var(--primary);
+                    --text-color: #fff;
+                    --radius: var(--msg-radius) var(--msg-radius) var(--msg-radius) 0;
+
+                    .cuerpo {
+                        margin-right: calc(var(--avatar-size) + var(--gap));
+
+                        .texto {
+                            box-shadow: 2px 2px 5px var(--primary);
+                        }
+                    }
+                }
+
+                &.usuario {
+                    --bg-color: var(--primary-light);
+                    --radius: var(--msg-radius) var(--msg-radius) 0 var(--msg-radius);
+                    flex-direction: row-reverse;
+
+                    .cuerpo {
+                        margin-left: calc(var(--avatar-size) + var(--gap));
+
+                        .texto, .fecha {
+                            width: fit-content;
+                            margin-left: auto;
+                        }
+                    }
+                }
+            }
+
+
+            .pensando:not(.hide) {
+                width: var(--avatar-size);
+                margin: 40px auto;
+                aspect-ratio: 1;
+                display: grid;
+                border: 4px solid #0000;
+                border-radius: 50%;
+                border-right-color: var(--primary);
+                animation: loading 1s infinite linear;
+
+                &:before, &:after {
+                    content: "";
+                    grid-area: 1/1;
+                    margin: 2px;
+                    border: inherit;
+                    border-radius: 50%;
+                    animation: loading 2s infinite;
+                }
+                /* &:before {
+                    border-color: #f03355 #0000;
+                    animation: inherit; 
+                    animation-duration: .5s;
+                    animation-direction: reverse;
+                } */
+                &:after {
+                    margin: 8px;
+                    animation-duration: 3s;
+                }
+            }
+
+            &.hide {
+                display: none;
+            }
+
+            #reciente-mensaje {
+                order: 9999999;
+            }
+        }
+
+        #acciones {
+            --gap: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: auto;
+            display: flex;
+            gap: var(--gap);
+            padding: 10px 20px;
+            background-color: var(--primary-lighter);
+
+            input {
+                flex: 1 1 auto;
+                padding: 10px 20px;
+                border: 1px solid var(--primary-medium);
+                border-radius: 100vmax;
+                font-family: var(--font-family);
+                font-size: 16px;
+                color: var(--text-color);
+                
+                &:focus, &:focus-visible {
+                    outline: none;
+                    box-shadow: 0 0 4px var(--primary-medium);
+                }
+
+                &::placeholder {
+                    color: var(--text-color);
+                }
+
+                &.disabled {
+                    pointer-events: none;
+                    opacity: 0.5;
+                    filter: grayscale(0.75);
+                }
+            }
+
+            button {
+                /*esto anula los estilos típicos del botón*/
+                font-size: 0;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                /*****************************/
+                width: var(--icon-size);
+                height: var(--icon-size);
+                aspect-ratio: 1;
+                margin: auto;
+                background-image: url(../../images/chat/flecha.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                cursor: pointer;
+                transition: 0.4s ease-in-out;
+                
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    #scrollTop  {
+        display: none;
+        --size: 40px;
+        width: var(--size);
+        height: var(--size);
+        position: fixed;
+        bottom: 80px;
+        right: 40px;
+        opacity: 0.7;
+        transition: all 0.2s ease-in-out;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px var(--primary);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    #scrollTop:hover {
+        opacity: 1;
+    }
+
+    #scrollBottom  {
+        display: none;
+        --size: 40px;
+        width: var(--size);
+        height: var(--size);
+        position: fixed;
+        bottom: 80px;
+        right: 40px;
+        opacity: 0.7;
+        transition: all 0.2s ease-in-out;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: -2px -2px 5px var(--primary);
+        transform: rotate(180deg);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    #scrollBottom:hover {
+        opacity: 1;
+    }
+}
+
+/* Animación Pensando */
+@keyframes loading{ 
+    100%{transform: rotate(1turn)}
+}

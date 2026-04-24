@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+<struts-config>
+    <form-beans>
+      <!--  Form Beans del subsistema de Gestión de usuarios -->
+      <form-bean name="loginForm" type="es.sdweb.application.controller.actionforms.gestionUsuariosPerfiles.LoginForm" />
+      <form-bean name="cambiarClaveForm" type="es.sdweb.application.controller.actionforms.gestionUsuariosPerfiles.CambiarClaveForm" />
+      <form-bean name="perfilForm" type="es.sdweb.application.controller.actionforms.gestionUsuariosPerfiles.PerfilForm" />
+      <form-bean name="busquedaUsuarioForm" type="es.sdweb.application.controller.actionforms.gestionUsuariosPerfiles.BusquedaUsuarioForm" />
+      <form-bean name="crearModificarUsuarioForm" type="es.sdweb.application.controller.actionforms.gestionUsuariosPerfiles.CrearModificarUsuarioForm" />
+
+      <!--  Form Beans del subsistema de Mantenimiento --> 
+      <form-bean name="constanteForm" type="es.sdweb.application.controller.actionforms.mantenimiento.ConstanteForm" />
+
+      <!--  Form Beans de BrainLearning --> 
+      <form-bean name="procesarTextoForm" type="es.sdweb.application.controller.actionforms.brainLearning.ProcesarTextoForm" />
+      <form-bean name="cargarFraseForm" type="es.sdweb.application.controller.actionforms.brainLearning.CargarFraseForm" />
+      <form-bean name="analizarEstructuraForm" type="es.sdweb.application.controller.actionforms.brainLearning.AnalizarEstructuraForm" />
+      <form-bean name="obtenerSinonimosForm" type="es.sdweb.application.controller.actionforms.brainLearning.ObtenerSinonimosForm" />
+      <form-bean name="obtenerAntonimosForm" type="es.sdweb.application.controller.actionforms.brainLearning.ObtenerAntonimosForm" />
+      <form-bean name="evaluarFraseForm" type="es.sdweb.application.controller.actionforms.brainLearning.EvaluarFraseForm" />
+      <form-bean name="obtenerComponentesForm" type="es.sdweb.application.controller.actionforms.brainLearning.ObtenerComponentesForm" />
+      <form-bean name="obtenerAgregadoresForm" type="es.sdweb.application.controller.actionforms.brainLearning.ObtenerAgregadoresForm" />
+      <form-bean name="obtenerSubclasesForm" type="es.sdweb.application.controller.actionforms.brainLearning.ObtenerSubclasesForm" />
+      <form-bean name="obtenerSuperclasesForm" type="es.sdweb.application.controller.actionforms.brainLearning.ObtenerSuperclasesForm" />
+      <form-bean name="resetearMemoriaForm" type="es.sdweb.application.controller.actionforms.brainLearning.ResetearMemoriaForm" />
+      <form-bean name="obtenerRedForm" type="es.sdweb.application.controller.actionforms.brainLearning.ObtenerRedForm" />
+      <form-bean name="comprobarVerboForm" type="es.sdweb.application.controller.actionforms.brainLearning.ComprobarVerboForm" />
+      <form-bean name="obtenerCualidadesForm" type="es.sdweb.application.controller.actionforms.brainLearning.ObtenerCualidadesForm" />
+      <form-bean name="obtenerNandasForm" type="es.sdweb.application.controller.actionforms.brainLearning.ObtenerNandasForm" />
+      <form-bean name="obtenerNicsForm" type="es.sdweb.application.controller.actionforms.brainLearning.ObtenerNicsForm" />
+      <form-bean name="obtenerNocsForm" type="es.sdweb.application.controller.actionforms.brainLearning.ObtenerNocsForm" />
+
+      <!--  Form Beans de MemoryCorp --> 
+      <form-bean name="chatForm" type="es.sdweb.application.controller.actionforms.memoryCorp.ChatForm" />
+      <form-bean name="obtenerReglasForm" type="es.sdweb.application.controller.actionforms.memoryCorp.ObtenerReglasForm" />
+      <form-bean name="cargarReglasForm" type="es.sdweb.application.controller.actionforms.memoryCorp.CargarReglasForm" />
+      <form-bean name="verificarNerForm" type="es.sdweb.application.controller.actionforms.memoryCorp.VerificarNerForm" />
+      <form-bean name="enviarFraseChatBotForm" type="es.sdweb.application.controller.actionforms.memoryCorp.EnviarFraseChatBotForm" />
+      <form-bean name="obtenerOntologiaSnomedForm" type="es.sdweb.application.controller.actionforms.memoryCorp.ObtenerOntologiaSnomedForm" />
+
+    </form-beans>
+    
+    <global-exceptions></global-exceptions>
+
+    <global-forwards>
+      <forward name="Principal" path="/index_principal.jsp" redirect="true" />
+      <forward name="Login" path="/index.jsp" redirect="false" />
+      <forward name="ImprimirPDF" path="/ImprimirPDF.do" />
+      <forward name="error" path="/actionerror.jsp" />
+      <forward name="nologin" path="/nologin.jsp" redirect="false" />
+      <forward name="accesoDenegado" path="/acceso_denegado.jsp" />
+      <forward name="errorBD" path="/error_bd.jsp" />
+      <forward name="errorWeb" path="/Web/errorWeb.jsp" />
+      
+      <!-- Mostrar un ActionForm como JSON (Debe implementar BaseForm) -->
+      <forward name="FrameJson" path="/pages/includes/json.jsp" />
+    </global-forwards>
+
+    <action-mappings>
+      <!--  Actions del subsistema de Gestión de usuarios -->
+      <action path="/Autenticacion" type="es.sdweb.application.controller.actions.gestionUsuariosPerfiles.AutenticacionAction" name="loginForm" input="/index.jsp" scope="request" validate="false" />
+      <action path="/password" type="es.sdweb.application.controller.actions.gestionUsuariosPerfiles.CambiarClaveAction" name="cambiarClaveForm" validate="false" scope="request">
+		<forward name="PasswordChange" path="/pages/user/password.jsp" />
+      </action>
+      <action path="/Salir" type="es.sdweb.application.controller.actions.gestionUsuariosPerfiles.SalirAction" validate="false" />
+      <action path="/BusquedaUsuario" parameter="accion" type="es.sdweb.application.controller.actions.gestionUsuariosPerfiles.BusquedaUsuarioAction" name="busquedaUsuarioForm" input="/vista/gestionUsuariosPerfiles/buscar_usuarios.jsp" scope="request" validate="false">
+        <forward name="NuevaBusqueda" path="/BusquedaUsuario.do?accion=buscar" />
+        <forward name="PantallaBusquedaUsuario" path="/vista/gestionUsuariosPerfiles/buscar_usuarios.jsp" />
+      </action>
+      <action path="/CrearModificarUsuario" parameter="accion" type="es.sdweb.application.controller.actions.gestionUsuariosPerfiles.CrearModificarUsuarioAction" name="crearModificarUsuarioForm" input="/vista/gestionUsuariosPerfiles/crear_modificar_usuario.jsp" scope="request" validate="false">
+        <forward name="PantallaCrearModificarUsuario" path="/vista/gestionUsuariosPerfiles/crear_modificar_usuario.jsp" />
+      </action>
+      <action path="/CrearModificarPerfil" parameter="accion" type="es.sdweb.application.controller.actions.gestionUsuariosPerfiles.CrearModificarPerfilAction" name="perfilForm" input="/vista/gestionUsuariosPerfiles/crear_modificar_perfil.jsp" scope="request" validate="false">
+        <forward name="PantallaCrearModificarPerfil" path="/vista/gestionUsuariosPerfiles/crear_modificar_perfil.jsp" />
+        <forward name="PantallaConfirmarAlta" path="/vista/gestionUsuariosPerfiles/up_crear_modificar_perfil.jsp?confirmar=true" />
+        <forward name="NuevaBusqueda" path="/BusquedaPerfil.do?accion=cargar" />
+      </action>
+      <action path="/BusquedaPerfil" parameter="accion" type="es.sdweb.application.controller.actions.gestionUsuariosPerfiles.BusquedaPerfilAction">
+        <forward name="FrameBusquedaPerfil" path="/vista/gestionUsuariosPerfiles/lista_perfiles.jsp" />
+        <forward name="RecargaFrameBusquedaPerfil" path="/vista/gestionUsuariosPerfiles/recarga_buscar_perfiles.jsp" />
+        <forward name="NuevaBusqueda" path="/BusquedaPerfil.do?accion=cargar" />
+        <forward name="PantallaBusquedaPerfil" path="/vista/gestionUsuariosPerfiles/buscar_perfiles.jsp" />
+      </action>
+
+      <!-- ACTIONS DEL SUBSISTEMA MANTENIMIENTO -->
+      <action path="/Constante" parameter="accion" type="es.sdweb.application.controller.actions.mantenimiento.ConstanteAction"
+        name="constanteForm" input="/vista/mantenimiento/constante_lista.jsp" scope="request" validate="false">
+        <forward name="ConstanteCargar" path="/Constante.do?accion=cargar" />
+        <forward name="FrameConstantes" path="/vista/mantenimiento/constantes_lista.jsp" />
+        <forward name="FrameConstantesAdvertencia" path="/vista/mantenimiento/constantes_lista.jsp" />
+      </action>
+
+	  <!-- Action de Cambio de idioma -->
+      <action path="/Locale" type="es.sdweb.application.controller.util.LanguageSelectAction" parameter="idioma" validate="false" />
+
+
+      <!-- Actions de BrainLearning -->
+      <action path="/ProcesarTexto" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ProcesarTextoAction" name="procesarTextoForm" input="/vista/brainLearning/procesar_texto.jsp" scope="request" validate="false">
+        <forward name="PantallaProcesarTexto" path="/vista/brainLearning/procesar_texto.jsp" />
+      </action>
+      
+      <action path="/CargarFrase" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.CargarFraseAction" name="cargarFraseForm" input="/vista/brainLearning/cargar_frase.jsp" scope="request" validate="false">
+        <forward name="PantallaCargarFrase" path="/vista/brainLearning/cargar_frase.jsp" />
+      </action>
+      
+      <action path="/AnalizarEstructura" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.AnalizarEstructuraAction" name="analizarEstructuraForm" input="/vista/brainLearning/analizar_estructura.jsp" scope="request" validate="false">
+        <forward name="PantallaAnalizarEstructura" path="/vista/brainLearning/analizar_estructura.jsp" />
+      </action>
+      
+      <action path="/ObtenerSinonimos" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ObtenerSinonimosAction" name="obtenerSinonimosForm" input="/vista/brainLearning/obtener_sinonimos.jsp" scope="request" validate="false">
+        <forward name="PantallaObtenerSinonimos" path="/vista/brainLearning/obtener_sinonimos.jsp" />
+      </action>
+      
+      <action path="/ObtenerAntonimos" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ObtenerAntonimosAction" name="obtenerAntonimosForm" input="/vista/brainLearning/obtener_antonimos.jsp" scope="request" validate="false">
+        <forward name="PantallaObtenerAntonimos" path="/vista/brainLearning/obtener_antonimos.jsp" />
+      </action>
+      
+      <action path="/EvaluarFrase" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.EvaluarFraseAction" name="evaluarFraseForm" input="/vista/brainLearning/evaluar_frase.jsp" scope="request" validate="false">
+        <forward name="PantallaEvaluarFrase" path="/vista/brainLearning/evaluar_frase.jsp" />
+      </action>
+      
+      <action path="/ObtenerComponentes" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ObtenerComponentesAction" name="obtenerComponentesForm" input="/vista/brainLearning/obtener_componentes.jsp" scope="request" validate="false">
+        <forward name="PantallaObtenerComponentes" path="/vista/brainLearning/obtener_componentes.jsp" />
+      </action>
+      
+      <action path="/ObtenerAgregadores" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ObtenerAgregadoresAction" name="obtenerAgregadoresForm" input="/vista/brainLearning/obtener_agregadores.jsp" scope="request" validate="false">
+        <forward name="PantallaObtenerAgregadores" path="/vista/brainLearning/obtener_agregadores.jsp" />
+      </action>
+      
+      <action path="/ObtenerSubclases" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ObtenerSubclasesAction" name="obtenerSubclasesForm" input="/vista/brainLearning/obtener_subclases.jsp" scope="request" validate="false">
+        <forward name="PantallaObtenerSubclases" path="/vista/brainLearning/obtener_subclases.jsp" />
+      </action>
+      
+      <action path="/ObtenerSuperclases" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ObtenerSuperclasesAction" name="obtenerSuperclasesForm" input="/vista/brainLearning/obtener_superclases.jsp" scope="request" validate="false">
+        <forward name="PantallaObtenerSuperclases" path="/vista/brainLearning/obtener_superclases.jsp" />
+      </action>
+      
+      <action path="/ResetearMemoria" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ResetearMemoriaAction" name="resetearMemoriaForm" input="/vista/brainLearning/resetear_memoria.jsp" scope="request" validate="false">
+        <forward name="PantallaResetearMemoria" path="/vista/brainLearning/resetear_memoria.jsp" />
+      </action>
+
+      <action path="/ObtenerRed" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ObtenerRedAction" name="obtenerRedForm" input="/vista/brainLearning/obtener_red.jsp" scope="request" validate="false">
+        <forward name="PantallaObtenerRed" path="/vista/brainLearning/obtener_red.jsp" />
+      </action>
+
+	  <action path="/ComprobarVerbo" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ComprobarVerboAction" name="comprobarVerboForm" input="/vista/brainLearning/comprobar_verbo.jsp" scope="request" validate="false">
+        <forward name="PantallaComprobarVerbo" path="/vista/brainLearning/comprobar_verbo.jsp" />
+      </action>
+      
+      <action path="/ObtenerCualidades" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ObtenerCualidadesAction" name="obtenerCualidadesForm" input="/vista/brainLearning/obtener_cualidades.jsp" scope="request" validate="false">
+        <forward name="PantallaObtenerCualidades" path="/vista/brainLearning/obtener_cualidades.jsp" />
+      </action>
+
+      <action path="/ObtenerNandas" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ObtenerNandasAction" name="obtenerNandasForm" input="/vista/brainLearning/obtener_nandas.jsp" scope="request" validate="false">
+        <forward name="PantallaObtenerNandas" path="/vista/brainLearning/obtener_nandas.jsp" />
+      </action>
+
+      <action path="/ObtenerNics" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ObtenerNicsAction" name="obtenerNicsForm" input="/vista/brainLearning/obtener_nics.jsp" scope="request" validate="false">
+        <forward name="PantallaObtenerNics" path="/vista/brainLearning/obtener_nics.jsp" />
+      </action>
+
+      <action path="/ObtenerNocs" parameter="accion" type="es.sdweb.application.controller.actions.brainLearning.ObtenerNocsAction" name="obtenerNocsForm" input="/vista/brainLearning/obtener_nocs.jsp" scope="request" validate="false">
+        <forward name="PantallaObtenerNocs" path="/vista/brainLearning/obtener_nocs.jsp" />
+      </action>
+      
+
+
+
+      <!-- Actions de MemoryCorp -->
+      <action path="/Chat" parameter="accion" type="es.sdweb.application.controller.actions.memoryCorp.ChatAction" name="chatForm" input="/vista/memoryCorp/chat.jsp" scope="request" validate="false">
+        <forward name="PantallaChat" path="/vista/memoryCorp/chat.jsp" />
+        <forward name="JsonChat" path="/vista/memoryCorp/json.jsp" />
+      </action>
+
+      <action path="/ObtenerReglas" parameter="accion" type="es.sdweb.application.controller.actions.memoryCorp.ObtenerReglasAction" name="obtenerReglasForm" input="/vista/memoryCorp/obtener_reglas.jsp" scope="request" validate="false">
+        <forward name="PantallaObtenerReglas" path="/vista/memoryCorp/obtener_reglas.jsp" />
+      </action>
+
+      <action path="/CargarReglas" parameter="accion" type="es.sdweb.application.controller.actions.memoryCorp.CargarReglasAction" name="cargarReglasForm" input="/vista/memoryCorp/cargar_reglas.jsp" scope="request" validate="false">
+        <forward name="PantallaCargarReglas" path="/vista/memoryCorp/cargar_reglas.jsp" />
+      </action>
+
+      <action path="/VerificarNer" parameter="accion" type="es.sdweb.application.controller.actions.memoryCorp.VerificarNerAction" name="verificarNerForm" input="/vista/memoryCorp/verificar_ner.jsp" scope="request" validate="false">
+        <forward name="PantallaVerificarNer" path="/vista/memoryCorp/verificar_ner.jsp" />
+      </action>
+
+      <action path="/EnviarFraseChatBot" parameter="accion" type="es.sdweb.application.controller.actions.memoryCorp.EnviarFraseChatBotAction" name="enviarFraseChatBotForm" input="/vista/memoryCorp/enviar_frase_chatbot.jsp" scope="request" validate="false">
+        <forward name="PantallaEnviarFraseChatBot" path="/vista/memoryCorp/enviar_frase_chatbot.jsp" />
+      </action>
+
+      <action path="/ObtenerOntologiaSnomed" parameter="accion" type="es.sdweb.application.controller.actions.memoryCorp.ObtenerOntologiaSnomedAction" name="obtenerOntologiaSnomedForm" input="/vista/memoryCorp/obtener_ontologia_snomed.jsp" scope="request" validate="false">
+        <forward name="PantallaObtenerOntologiaSnomed" path="/vista/memoryCorp/obtener_ontologia_snomed.jsp" />
+      </action>
+
+    </action-mappings>
+	
+    <message-resources parameter="i18n" />
+
+</struts-config>

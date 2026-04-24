@@ -1,0 +1,1 @@
+./pages/includes/footer.jsp

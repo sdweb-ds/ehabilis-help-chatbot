@@ -1,0 +1,427 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+#cont_prin {
+					 /*position:absolute;*/
+					 background:#fff url(../images/logo_fondo2.gif) no-repeat 50% 50%;
+  				 height:100%;
+					 width:100%;
+}
+
+#cont_1{
+				width:100%;
+				height:73px;
+				background:#2B6CAD url(../images/diseno-xestion-de-cursos_03.gif) repeat-x;
+				color:#FFFFFF;
+}
+
+#encabezado_izquierda{
+											position:absolute;
+											width:389px;
+              				height:73px;
+              				background-image:url(../images/diseno-xestion-de-cursos_03.gif);
+              				background-repeat:no-repeat;
+}
+
+#encabezado_derecha{
+										position:absolute;
+										right:0px;
+										width:100%;
+              			height:73px;
+              			background-image:url(../images/diseno-xestion-de-cursos_03.gif);
+              			background-repeat:no-repeat;
+										background-position:right top;
+										z-index:1;
+}
+
+#logo_xunta{
+						margin:15px 0 0 15px;
+}
+
+#titulo_principal{
+									height:1em;
+									position:absolute;
+									bottom:0.5em;
+									right:15px;
+									z-index:2;
+}
+
+#barra_gris{
+						background-color:#eee;
+						width:100%;
+            height:1.3em;
+						border-top:3px double #3052A5;
+						}
+
+						
+#formulario_busqueda{
+										 padding:5px;									 
+}
+
+
+/***************************************************/
+/****   Etiquetas HTML                     *********/
+/***************************************************/
+body{
+		 font-family:Verdana,Arial,Helvetica,sans-serif;
+		 color:#2B6CAD;
+		 font-size:0.9em;
+}
+
+h1,h2{
+			display:inline;
+			color:#fff;
+			font-family:Verdana,Arial,Helvetica,sans-serif;
+		}
+		
+h1{font-size:1.3em;}
+h2{font-size:1.1em;}
+h3{
+	 font-size:1.1em;
+	 padding:0 15px;
+	 margin:0 27px;
+	 background-color:#888;
+	 color:#fff;
+	 display:inline;
+	 }		
+
+h4{
+	 margin-top:10px;
+}
+
+h6{
+	 font-size:0.7em;
+	 color:#888;
+	 }	
+
+img{border:0;}
+		
+label{
+			font-size:0.8em;
+			font-weight:bold;
+			}
+						
+fieldset{
+				background-image:url(../images/esquina_sup_izq_gris.gif);
+				background-repeat:no-repeat;
+				background-color:#eee;
+				border:none;
+				padding:0px 10px 5px 20px;
+				margin:5px 0 8px 0;
+				display:block;
+				overflow:visible;
+}	
+
+legend{
+			 font-size:0.8em;
+			 font-weight:bolder;
+			 padding:4px 10px 8px 10px;
+			 background-color:#eee;
+			 font-variant:small-caps;
+			 display:none;
+			 color:#35699C;
+}
+
+legend.visible{
+			 display:block;
+}
+
+ul{
+	 list-style-type:none;
+}
+
+li{
+	 text-align:left;
+	 padding:3px 0;
+	 vertical-align:top;
+}
+
+input.botones {
+background-color:#2B6CAD;
+border:3px double #fff;
+color:#FFFFFF;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:0.9em;
+font-weight:bolder;
+width:8em;
+cursor:pointer;
+margin-top:4px;
+}
+
+input.checkbox{
+							 height:1em;
+							 width:1em;
+}
+
+.botones:hover{
+							border:3px double #35699C;
+}
+
+a:link{
+      color:#004477;
+      text-decoration:none;
+}
+
+a:active{
+        color:#FF0000;
+        text-decoration:none;
+}
+
+td a{
+	 font-weight:bold;
+	 font-size:80%;
+	 color:#2A4B9E;
+}
+
+td a:hover{
+	 color:#2B6CAD;
+}
+
+table,th,tr,td{border:0 solid;}	
+
+th{
+	 background-color:#2B6CAD;
+	 color:#fff;
+	 font-size:0.8em;
+	 height:1em;
+	 }		
+
+/***********************************************/
+/********   Clases            *****************/
+/**********************************************/
+	
+.nombre_campo{
+              width:16em;
+              float:left;
+							padding-right:4px;
+							height:100%;
+}
+
+.listado_standard{
+									border:1px solid #2B6CAD;
+									}
+									
+.par{background-color:#eee}
+
+
+.impar{background-color:#fff}
+
+
+.invisible{display:none;}
+
+.standar{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size:0.7em; 
+	color: #2B6CAD; 
+}
+
+.enlace{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size:0.8em; 
+	color: #2B6CAD; 
+}
+
+.fondoerror{
+		background-image:url(/xescur/images/esquina_sup_izq_naranja.gif);
+		background-repeat:no-repeat;
+		border:0px solid #0066cc;
+		background-color:#ffe9bb;
+		padding:0px 10px;
+		margin:8px 0;
+		display:block;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size:11px; 
+		color: #FF0000 }						 
+
+.input{ 
+	font-size: 0.7em; 
+	color: #002969 ; 
+	font-weight: bold;
+	border:1px solid #A5ACB2; 
+}
+
+.invisible {display:none;}
+
+.file{
+			height:1.8em;
+			font-size: 0.7em; 
+			color: #002969 ; 
+			font-weight: bold;
+			border:1px solid #A5ACB2;
+			}
+			
+#fieldset_login{
+							 border:1px solid #2B6CAD;
+							 position:absolute;
+							 top:40%;
+							 left:40%;
+						 }
+						 
+.formu_login{
+						 background:transparent;
+						 display:block;
+						 padding:10px;
+						 margin:auto;
+						 color:#35699C;
+						 }
+						 
+#centrado {
+          margin:0px auto;
+          width:20%;
+}
+
+#relleno_invisible{
+									visibility:hidden;
+									height:6em;
+}
+
+.grupo{
+			 display:block;
+			 padding:3px;
+}
+
+div#contenido{
+							height:80%;
+							width:98%;
+							margin:0 1% 0 1%;
+}
+
+* html div#contenido{
+							margin-left:2%;
+} 
+
+table#tabla_cursos, table#tabla_alumnos{
+									 border-spacing:3px;
+									 width:100%;						 
+}
+
+div#contenedor_tabla_cursos{
+			 border:1px solid #2B6CAD;
+			 overflow-y:scroll;
+			 overflow-x:hidden;
+			 height:6em;
+}
+div#contenedor_tabla_alumnos{
+			 border:1px solid #2B6CAD;
+			 overflow-y:scroll;
+			 overflow-x:hidden;
+			 height:14em;
+}
+
+div#impresos{
+			 border:1px solid #2B6CAD;
+			 height:1em;
+			 text-align:left;
+			 margin-bottom:10px;
+}
+
+div#botons{
+			 text-align:right;
+			 margin-bottom:10px;
+}
+
+div#contenedor_tabla_alumnos{
+			margin-bottom:10px;
+}
+
+
+th.CSSoculto{
+						 color:#2B6CAD;
+						 }
+				
+div#advertencias{
+								 color:#f00;
+								 font-weight:bold;
+}
+
+td.center{
+					text-align:center;
+}
+
+fieldset.radioboton{
+										display:block;
+										padding:0px;
+										margin:0px;
+										float:left;
+										background-image:none;
+}
+
+fieldset.radioboton label{
+										display:block;
+										margin:10px;
+										float:none;
+}
+
+fieldset label{
+							display:block;
+							float:left;		
+							vertical-align:bottom;
+}
+
+fieldset label span{
+										display:block;
+}
+
+#datos_alumno{
+							width:50%;
+							float:left;
+							margin:10px;
+}
+
+label.retorno{
+							clear:left;
+}
+
+table#calendario{
+								 border-spacing:3px;
+								 border:4px solid #fff;
+}
+
+table#calendario td{
+								 text-align:center;
+								 padding:1px;
+								 font-size:70%;
+								 font-weight:bold;
+}
+
+table#calendario caption, table#calendario td{
+								 border:1px solid #2B6CAD;
+								 background-color:#fff;								
+}
+
+option{
+			 padding: 0 3px 0 3px;
+			 font-size:100%;
+			 font-weight:bold;
+			 color:#444;
+}
+
+
+fieldset table.maquetacion{
+				 width:100%;
+				 clear:both;
+}
+
+span.ayuda{
+					 font-weight:normal;
+					 font-size:90%;
+}
+
+input.botones{
+							margin:-2px 0 0 0;
+}
+
+
+fieldset#ficha textarea{
+							 width:100%;
+							 clear:left;							 
+}
+
+div#select_linea{
+						 clear:left;		 
+}
+
+
+

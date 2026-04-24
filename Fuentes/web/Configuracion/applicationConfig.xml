@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+
+<web-app>
+
+	<!-- ##################################### CONFIGURACION GENERAL ############################################# -->
+
+	<!-- ############# GESTOR DE LOGS ################ -->
+	<context-param>
+		<param-name>application.name</param-name>
+		<param-value>ChatBot eHabilis Help</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>application.version</param-name>
+		<param-value>01.00</param-value>
+	</context-param>
+
+	<!-- ############# CIFRADO RIJNDAEL ################ -->
+	<context-param>
+		<param-name>rijndael.password.properties.file.path</param-name>
+		<param-value>key.properties</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>rijndael.password.properties.entry.key</param-name>
+		<param-value>rijndael/key</param-value>
+	</context-param>
+
+
+
+	<!-- ##################################### CONFIGURACION CAPA DE ACCESO  A DATOS ############################## -->
+	<!-- ### GESTION DE CONEXIONES -->
+	<!-- Configuración de la conexión con la base de datos de Informix (Si se
+		utiliza un DataSource) -->
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.FabricaGestorConexiones.fabricaConcretaClassName
+		</param-name>
+		<!-- <param-value>es.sdweb.application.model.dal.GestorConexionesDataSource</param-value>  -->
+		<param-value>es.sdweb.application.model.dal.GestorConexionesSimple</param-value>
+	</context-param>
+
+		<!--  <context-param> <param-name>nombre.datasource</param-name> <param-value>java:comp/env/jdbc/taquilla_manager_cloud_data_source</param-value>
+		</context-param>  -->
+
+	<!-- Configuración de la conexión con la base de datos (Si se
+		utilizan conexiones simples) -->
+ 	<context-param> 
+ 		<param-name>driverClassName</param-name> 
+ 		<param-value>com.mysql.jdbc.Driver</param-value> 
+ 	</context-param> 
+ 	<context-param> 
+ 		<param-name>driverUrl</param-name> 
+ 		<param-value>jdbc:mysql://127.0.0.1:3306/ehabilis_help_chatbot</param-value>
+ 	</context-param> 
+ 	<context-param> 
+ 		<param-name>user</param-name> 
+ 		<param-value>USER</param-value>
+ 	</context-param> 
+ 	<context-param> 
+ 		<param-name>password</param-name>
+		<param-value>PASSWORD</param-value>
+        </context-param>
+
+
+
+	<!-- ################## GENERAL ################## -->
+
+	<context-param>
+		<param-name>utilizar.autenticacion.basica</param-name>
+		<param-value>S</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>global.forward.login</param-name>
+		<param-value>/index.jsp</param-value>
+	</context-param>
+
+		<context-param>
+		<param-name>global.forward.home</param-name>
+		<param-value>/index_principal.jsp</param-value>
+	</context-param>
+
+	<!--<context-param>
+		<param-name>url.acceso.portal</param-name>
+		 <param-value>http://localhost</param-value>
+	</context-param>-->
+
+	<!-- ##################################### CONFIGURACION CAPA DE MODELO DE NEGOCIO ############################## -->
+
+	<context-param>
+		<param-name>es.sdweb.application.model.facade.GestionUsuarioFacade.className
+		</param-name>
+		<param-value>es.sdweb.application.model.GestionUsuarioFacade
+		</param-value>
+	</context-param>
+
+
+	<context-param>
+		<param-name>es.sdweb.application.model.facade.MantenimientoFacade.className
+		</param-name>
+		<param-value>es.sdweb.application.model.MantenimientoFacade
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.facade.TaquillaControlFacade.className
+		</param-name>
+		<param-value>es.sdweb.application.model.TaquillaControlFacade
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.facade.ExplotacionDatosFacade.className
+		</param-name>
+		<param-value>es.sdweb.application.model.ExplotacionDatosFacade
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.facade.PortalFacade.className
+		</param-name>
+		<param-value>es.sdweb.application.model.PortalFacade
+		</param-value>
+	</context-param>
+
+        <!-- ##################################### DEFINICION DE DAOS ##################################### -->
+
+	<!-- DAOS del subsistema de GESTION DE USUARIOS -->
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.PerfilUsuarioDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.PerfilUsuarioAccessor
+		</param-value>
+	</context-param>
+
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.UsuarioDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.UsuarioAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.ElementoDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.ElementoAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.PerfilDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.PerfilAccessor
+		</param-value>
+	</context-param>
+
+
+	<!-- DAOS del subsistema de maestros -->
+
+        <context-param>
+		<param-name>es.sdweb.application.model.dal.facade.ConstanteDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.ConstanteAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.TipoOperacionCajaDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.TipoOperacionCajaAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.FormaPagoDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.FormaPagoAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.UbicacionDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.UbicacionAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.EspacioDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.EspacioAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.TipoItemDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.TipoItemAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.ItemDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.ItemAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.TarifaRangoTemporalDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.TarifaRangoTemporalAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.TarifaDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.TarifaAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.ConjuntoTarifasDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.ConjuntoTarifasAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.FuncionDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.FuncionAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.EventoDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.EventoAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.DirigidoADAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.DirigidoAAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+        <param-name>es.sdweb.application.model.dal.facade.ProgramaDAO.className
+        </param-name>
+        <param-value>es.sdweb.application.model.dal.dao.ProgramaAccessor
+        </param-value>
+    </context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.LocalidadDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.LocalidadAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.CiudadanoDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.CiudadanoAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.OperacionCajaDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.OperacionCajaAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.GeneroDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.GeneroAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.BloqueoLocalidadesDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.BloqueoLocalidadesAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.LogDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.LogAccessor
+		</param-value>
+	</context-param>
+
+	<context-param>
+        <param-name>es.sdweb.application.model.dal.facade.TipoAbonoDAO.className
+        </param-name>
+        <param-value>es.sdweb.application.model.dal.dao.TipoAbonoAccessor
+        </param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>es.sdweb.application.model.dal.facade.AbonoDAO.className
+        </param-name>
+        <param-value>es.sdweb.application.model.dal.dao.AbonoAccessor
+        </param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>es.sdweb.application.model.dal.facade.AbonoItemDAO.className
+        </param-name>
+        <param-value>es.sdweb.application.model.dal.dao.AbonoItemAccessor
+        </param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>es.sdweb.application.model.dal.facade.TarifaTipoAbonoDAO.className
+        </param-name>
+        <param-value>es.sdweb.application.model.dal.dao.TarifaTipoAbonoAccessor
+        </param-value>
+    </context-param>
+
+   	<context-param>
+		<param-name>es.sdweb.application.model.dal.facade.AbonoOperacionCajaDAO.className
+		</param-name>
+		<param-value>es.sdweb.application.model.dal.dao.AbonoOperacionCajaAccessor
+		</param-value>
+	</context-param>
+
+
+	<!-- ###################################### CODIGOS DE ERROR ################################################ -->
+	<!-- Unique constraint violated. -->
+	<context-param>
+		<param-name>primary.key.violation</param-name>
+		<param-value>-268</param-value>
+	</context-param>
+	<!-- Key value for constraint (informix.u881_4243) is still being referenced. -->
+	<context-param>
+		<param-name>foreign.key.violation.referenced</param-name>
+		<param-value>-692</param-value>
+	</context-param>
+	<context-param>
+		<param-name>constraint.key.violation</param-name>
+		<param-value>-268</param-value>
+	</context-param>
+
+	<!-- ######################################################################################################### -->
+</web-app>

@@ -1,0 +1,200 @@
+	BODY {
+	SCROLLBAR-FACE-COLOR: #788db0; SCROLLBAR-HIGHLIGHT-COLOR: #002969; SCROLLBAR-SHADOW-COLOR: #002969; SCROLLBAR-3DLIGHT-COLOR: #ffffff; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #dae4f2; SCROLLBAR-DARKSHADOW-COLOR: #002969
+}
+A {
+	CURSOR: hand; COLOR: #002969; TEXT-DECORATION: none
+}
+.menu-up {
+	FONT-SIZE: 10px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.titulo {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.CCENWtitulo {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 10px; VISIBILITY: hidden; BORDER-LEFT: 0px; COLOR: #002969; PADDING-TOP: 2px; BORDER-BOTTOM: 0px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: white; TEXT-ALIGN: left
+}
+.CCENWpaginacion {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 9px; BORDER-LEFT: 0px; COLOR: #002969; PADDING-TOP: 2px; BORDER-BOTTOM: 0px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: white; TEXT-ALIGN: left
+}
+.CCENWCalendario {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.capitular {
+	FONT-SIZE: 9px; TEXT-TRANSFORM: uppercase; COLOR: #002969; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+
+.menu {
+	PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 10px; PADDING-BOTTOM: 2px; COLOR: #002969; PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.menu2 {
+	PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 10px; PADDING-BOTTOM: 2px; COLOR: #002969; PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #dae4f2
+}
+.campo_cabecera_obligatorio {
+	PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 10px; PADDING-BOTTOM: 2px; COLOR: #002969; background-color: #EEEE99; PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.standarblanco {
+	FONT-SIZE: 9px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.menu11 {
+	PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; COLOR: #002969; PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.menu12 {
+	PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; COLOR: #002969; PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.menublanco {
+	PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 10px; PADDING-BOTTOM: 2px; COLOR: #ffffff; PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.titulo2 {
+	FONT-WEIGHT: bolder; FONT-SIZE: 13px; COLOR: #002969; FONT-STYLE: italic; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.titulo3 {
+	FONT-WEIGHT: bolder; FONT-SIZE: 16px; COLOR: #002969; FONT-STYLE: italic; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.input2 {
+	BORDER-RIGHT: #002969 1px solid; BORDER-TOP: #002969 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 9px; BORDER-LEFT: #002969 1px solid; COLOR: #002969; BORDER-BOTTOM: #002969 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.input3 {
+	BORDER-RIGHT: #002969 1px solid; BORDER-TOP: #002969 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 6pt; TEXT-TRANSFORM: uppercase; BORDER-LEFT: #002969 1px solid; COLOR: #002969; BORDER-BOTTOM: #002969 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-VARIANT: normal
+}
+.standar {
+	FONT-SIZE: 9px; MARGIN-LEFT: 4px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.standarWeb {
+	FONT-SIZE: 0.6em; MARGIN-LEFT: 4px; COLOR: #0a358b; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.standarCentrada {
+	text-align: center ;FONT-SIZE: 9px; MARGIN-LEFT: 4px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.standarRojo {
+	FONT-SIZE: 9px; MARGIN-LEFT: 2px; COLOR: #ff0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.standarAzul {
+	FONT-SIZE: 9px; MARGIN-LEFT: 2px; COLOR: #0000ff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.standarDes {
+	FONT-SIZE: 9px; MARGIN-LEFT: 2px; COLOR: #999999; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.standarLigado {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; MARGIN-LEFT: 2px; COLOR: #002969; FONT-STYLE: italic; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.standarover {
+	FONT-SIZE: 9px; MARGIN-LEFT: 2px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #dae4f2
+}
+.standarpeq {
+	FONT-WEIGHT: bolder; FONT-SIZE: 8px; MARGIN-LEFT: 1px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.standaroverpeq {
+	FONT-WEIGHT: bolder; FONT-SIZE: 8px; MARGIN-LEFT: 1px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #dae4f2
+}
+.standarCeldaRoja {
+	text-align: center ; BACKGROUND-COLOR: #CC3300; FONT-SIZE: 9px; MARGIN-LEFT: 2px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.standarCeldaVerde {
+	text-align: center ; BACKGROUND-COLOR: #00CC00; FONT-SIZE: 9px; MARGIN-LEFT: 2px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.standarCeldaGris {
+	text-align: center ; BACKGROUND-COLOR: #808080; FONT-SIZE: 9px; MARGIN-LEFT: 2px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.colorLineaPar {
+	BACKGROUND-COLOR: #dce5f2
+}
+.colorLineaImpar {
+	BACKGROUND-COLOR: #E9EFF8
+}
+.colorLineaParWeb {
+	BACKGROUND-COLOR: #eeeeee
+}
+.colorLineaImparWeb {
+	BACKGROUND-COLOR: #ffffff
+}
+
+.colorLineaResaltada {
+	BACKGROUND-COLOR: #01bcff
+}
+.colorLineaSeleccionada {
+	BACKGROUND-COLOR: #FF0000
+}
+.lineaSeparacion {
+	BACKGROUND-COLOR: #002969
+}
+.tituloLista {
+	FONT-SIZE: 9px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #788db0
+}
+.fondoCon {
+	BACKGROUND-COLOR: #dae4f2
+}
+.fondoSin {
+	BACKGROUND-COLOR: #ffffff
+}
+.colorCapaRegistros {
+	BACKGROUND-COLOR: #dae4f2; layer-background-color: #DAE4F2
+}
+.pestanaSelec {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #dae4f2
+}
+.pestanaNoSelec {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.lineaSeleccionada {
+	FONT-SIZE: 9px; MARGIN-LEFT: 2px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #009add
+}
+.lineaNoSeleccionadaCon {
+	FONT-SIZE: 9px; MARGIN-LEFT: 2px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #dae4f2
+}
+.lineaNoSeleccionadaSin {
+	FONT-SIZE: 9px; MARGIN-LEFT: 2px; COLOR: #002969; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+
+.scrollWeb
+{ 
+	scrollbar-arrow-color: #eeeeee;
+	scrollbar-3dlight-color: #eeeeee;
+	scrollbar-highlight-color: #002969; 
+	scrollbar-face-color: #0073ab; 
+	scrollbar-shadow-color: #002969; 
+	scrollbar-track-color: #eeeeee; 
+	scrollbar-darkshadow-color: #002969; 
+}
+
+.botones_estandar {
+  border-radius: 4px; 
+  font-size: 12px; 
+  cursor:pointer; 
+  margin: 5px; 
+  padding:5px 20px; 
+  font-weight:bold; 
+  background-color:rgb(0, 73, 149); 
+  color:white; 
+  border:1px solid #002969;
+}  
+.botones_estandar:hover {background-color:rgb(93, 169, 194)}
+.botones_estandar:hout {background-color:rgb(0, 73, 149)}
+
+.botones_deshabilitados {
+  border-radius: 4px; 
+  font-size: 12px; 
+  cursor:pointer; 
+  margin: 5px; 
+  padding:5px 20px; 
+  font-weight:bold; 
+  background-color:rgb(73, 73, 73); 
+  color:white; 
+  border:1px solid #002969;
+}  
+.botones_deshabilitados:hover {background-color:rgb(93, 93, 93)}
+.botones_deshabilitados:hout {background-color:rgb(73, 73, 73)}
+
+.formulario_estandar {
+    border: 1px solid; 
+    color: #002969;
+    background-color:#e0e0e0;
+}
+
+.input_label
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	color: #002969; 
+	font-weight: bold ; 
+        text-align: left;
+}

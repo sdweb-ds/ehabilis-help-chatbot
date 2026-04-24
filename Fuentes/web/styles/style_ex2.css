@@ -1,0 +1,392 @@
+BODY{ 
+scrollbar-arrow-color: #002969; 
+scrollbar-3dlight-color: #002969; 
+scrollbar-highlight-color: #FFFFFF; 
+scrollbar-face-color: #FFFFFF; 
+scrollbar-shadow-color: #FFFFFF; 
+scrollbar-track-color: #ffffff; 
+scrollbar-darkshadow-color: #002969;
+}
+
+
+A {TEXT-DECORATION: none; color: #002969}
+
+.standar_01 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #002969;
+	border-bottom: 1px dashed #CCDBEE;
+	vertical-align: middle;
+}.standar_01 a{
+	color: #002969;
+	display: block;
+	padding:5px 3px;
+}.standar_01 a:hover, .standar_01 a:active {
+	background-color: #E9EFF8;
+}
+.titulo1italic {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	color: #002969;
+	background-color: #E9EFF8;
+
+}
+
+.titulo1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+}.titulo1 a:hover, .titulo1 a:active {
+	font-style: normal;
+	color: #000000;
+}.standarblanco {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-style: normal;
+}.tituloblanco { 
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 11px; 
+  text-decoration:none; 
+  color: #ffffff ; 
+  font-weight: bold;
+}p.capitular{
+	margin: 0px 0px 4px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #002969;
+	text-transform: uppercase;
+}p.capitular a {
+	padding:1px 5px 2px 14px;
+	background-image: url(images/tropo_peq.gif);
+	background-repeat: no-repeat;
+	display: block;
+}p.capitular a:hover, p.capitular a:active {
+	background-color: #E9EFF8;
+}p.capitular2{
+	margin: 0px 0px 4px 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #002969;
+	text-transform: uppercase;
+}p.capitular2 a {
+	padding:1px 5px 2px 14px;
+	background-image: url(images/tropo_peq2.gif);
+	background-repeat: no-repeat;
+	display: block;
+}p.capitular2 a:hover, p.capitular a:active {
+	;}
+/* Estilos utilizados para el men lateral */
+.bOut{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9px;
+	font-style: italic;
+  font-weight: normal;
+  color: white;
+  padding: 3px 5px;
+  cursor: hand;
+}
+.menuLateral {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #002969;
+	font-weight: bold;
+	padding-left: 5px;
+	height: 20px;
+	vertical-align: middle;
+}.menulateral2 {
+	margin: 0px 0px 4px 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #006394;
+	height: 15px;
+	background-image: url(images/tropo_peq2.gif);
+	background-repeat: no-repeat;
+	padding:0px 0px 0px 18px;
+
+}.tituloCabecera {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+}
+.etiqueta {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #006394;
+	vertical-align: middle;
+	height: 25px;
+	font-weight: bold;
+	text-align: right;
+}
+.campo_formulario {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #002969;
+	font-weight: normal;
+	border: 1px solid #006394;
+}
+.desplegable {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #002969;
+	font-weight: normal;
+}.tabla_txt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #002969;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;}
+.tabla_txt a {
+	color:#002969;
+	display: block;}
+.tabla_txt a:hover, .tabla_txt a:active {
+	background-color: #CCDBEE;
+
+}.titulo_lista {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #006394;
+	font-weight: bold;
+}
+.titulo_lista02 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #79A1D3;
+}
+.titulo_lista02 a {
+	color: #FFFFFF;
+}
+.titulo2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #000000;
+	text-decoration: none;
+
+}
+.etiqueta02 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #006394;
+	height: 25px;
+	font-weight: bold;
+	vertical-align: middle;
+	background-color: #ccdbee;
+	text-align: right;
+}
+.txt_etiqueta02 {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #002969;
+	height: 25px;
+	font-weight: bold;
+	vertical-align: middle;
+	background-color: #ccdbee;
+}
+.txt_etiqueta {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #002969;
+	height: 25px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.standar02 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #002969;
+	vertical-align: middle;
+	font-weight: bold;
+}
+.barraNav {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #006394;
+	padding-left: 12px;
+	vertical-align: top;
+}.barraNav a{
+	color: #006394;
+	text-decoration: none;
+	vertical-align: middle;
+}.barraNav a:hover, .barraNav a:active {
+	color: #002969;
+	text-decoration: overline;}
+#centrar {
+	text-align: center;}
+
+.subsolapas {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #002969;
+	background-color: #FFFFFF;
+	text-align: center;
+	height: 14 px;
+	border: 1px solid #002969;
+}
+.subsolapas a {
+	color: #002969;
+	display: block;
+	padding: 0px 5px;
+}
+.subsolapas a:hover, .subsolapas a:active {
+	color: #002969;
+	background-color: #ccdbee;
+}.solapas {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	color: #002969;
+	text-align: center;
+	line-height: 15px;
+}
+.solapas a {
+	color: #006394;
+	display: block;
+	background-color: #FFFFFF;
+}
+.solapas a:hover, .solapas a:active {
+	color: #FFFFFF;
+	background-color: #006394;
+	display: block;
+}
+.txt_titulo { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FF6600;
+	font-size: 12px;
+	font-weight: bold;
+}
+.txt{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 12px;
+}
+
+    
+.boton{
+     font-size:13px;
+     font-family:Verdana, Arial, Helvetica, sans-serif;
+     font-weight:bold;
+     color:#006394;
+     background:white;
+     border:0px;
+     width:70px;
+     height:16px;           
+}
+
+ 
+
+.botonAncho{
+     font-size:13px;
+     font-family:Verdana, Arial, Helvetica, sans-serif;
+     font-weight:bold;
+     color:#006394;
+     background:white;
+     border:0px;
+     width:85px;
+     height:16px;           
+}
+
+.claseFrame{
+	cursor:hand;
+}
+
+A.simpleLink:link{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #002969;
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: none;
+}
+
+A.simpleLink:hover{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #002969;
+	FONT-WEIGHT: bold;
+}
+
+A.simpleLink:active{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #002969;
+	FONT-WEIGHT: bold;
+}
+
+A.simpleLink:visited{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #002969;
+	FONT-WEIGHT: bold;
+}
+
+A.linkTabla:link {
+	color: #4872A5;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+}
+A.linkTabla:visited {
+	color: #4872A5;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+}
+A.linkTabla:hover {
+	color: #79A1D3;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+}
+A.linkTabla:active {
+	color: #79A1D3;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+}
+
+
+A.linkTabla2:link {
+	color: #ffffff;
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+}
+A.linkTabla2:visited {
+	color: #ffffff;
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+}
+A.linkTabla2:hover {
+	color: #4872A5;
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+}
+A.linkTabla2:active {
+	color: #4872A5;
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+}
+

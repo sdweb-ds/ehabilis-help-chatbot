@@ -1,0 +1,267 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+		 font-family:Verdana,Arial,Helvetica,sans-serif;
+		 color:#3E7CB9;
+		 font-size:0.9em;
+		 padding:10px;
+}
+
+strong{font-size:1.1em;}
+
+span.aviso{
+	font-style:italic;
+	font-size:0.9em;
+}
+
+img{border:none;}
+
+h1{
+	 font-weight:bold;
+	 margin:0 10px 20px 10px;
+	 font-size:1.2em;
+	 }
+
+h2{
+	 font-weight:bold;
+	 margin:0 10px 0 10px;
+	 font-size:1.1em;
+	 }
+
+#web_alternativa{
+	 text-decoration:underline;
+	 font-weight:bold;								 
+}	 
+
+#web_alternativa:hover{
+		color:#3E7CB9;	 
+}	 
+	 
+p{margin:5px;}
+
+td.nombre_campo{
+		text-align:right;
+		width:15%;
+		font-size:0.85em;
+}
+
+#encabezado{
+			background-image:url(/xescur/images/esquina_sup_izq_azul.gif);
+			background-repeat:no-repeat;
+          	background-color:#3E7CB9;
+          	color:#fff;
+          	padding:4px 0 4px 10px;
+          	margin: 1px 0 10px 0;
+			position:relative;
+			top:0px;
+			left:0px;
+}
+
+
+
+legend{
+			 font-size:0.8em;
+			 font-weight:bolder;
+			 padding:2px 10px 5px 10px;
+			 background-color:#eeeeee;
+			 text-transform:uppercase;
+			 display:none;
+			 background-repeat:no-repeat;
+			 color:#35699C;
+}
+
+legend.visible{
+			 display:block;
+}
+
+fieldset{
+				background-image:url(/xescur/images/esquina_sup_izq_gris.gif);
+				background-repeat:no-repeat;
+				border:0px solid #0066cc;
+				background-color:#eeeeee;
+				padding:0px 10px;
+				margin:8px 0;
+				display:block;
+}
+
+table.contenido_fieldset{
+				width:95%;
+}
+
+
+label{
+			font-size:0.8em;
+			font-weight:bold;
+			}
+			
+#fecha{
+			 position:absolute;
+			 top:20px;
+			 right:15px;
+			 color:#fff;
+}
+
+.mayusculas{
+			font-variant:small-caps;
+}
+
+#TxtProvincia,#TxtLocalidad,#TxtAyuntamiento,#TxtNivel,#TxtLocalidadPref,#TxtLocal{width:100%;}
+
+.inputWeb
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	color: #002969; 
+	font-weight: medium; 		
+}
+
+a.boton_no_disponible{text-decoration:underline;}
+
+a.boton_no_disponible:hover{color:#000;}
+
+
+th{
+	 background-color:#3E7CB9;
+	 color:#fff;
+	 font-size:0.8em;
+	 height:1em;
+	 }
+
+.listado_standard{
+									border:1px solid #3E7CB9;
+									}
+									
+.par{background-color:#eee}
+
+
+.impar{background-color:#fff}
+
+
+.invisible{display:none;}
+input.botones {
+background-color:#3E7CB9;
+border:3px double #fff;
+color:#FFFFFF;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:0.9em;
+font-weight:bolder;
+cursor:pointer;
+margin-top:10px;
+}
+
+.botones:hover{
+	border:3px solid #35699C;
+}
+
+/* Utilizadas para Listado de Cursos */
+
+.fondoTituloRedondeado{
+			background-image:url(/xescur/images/esquina_sup_izq_azul.gif);
+			background-repeat:no-repeat;
+          	background-color:#3E7CB9;
+          	color:#fff;
+          	padding:4px 0 4px 10px;
+          	margin: 1px 0 10px 0;
+			position:relative;
+			top:0px;
+			left:0px;
+			text-align:center;	
+			font-size:0.6em;
+			font-weight:bold;
+}
+
+.fondoTitulo{
+          	background-color:#3E7CB9;
+          	color:#fff;
+			position:relative;
+			text-align:center;
+			font-size:0.6em;
+			font-weight:bold;
+}
+
+.botonflecha{
+			background-image:url(/xescur/images/flecha_ordenar.gif);
+			background-repeat:no-repeat;
+          	background-color:#eeeeee;
+          	color:#fff;
+          	padding:4px 0 4px 10px;
+          	margin: 1px 0 1px 0;
+			position:relative;
+			top:0px;
+			left:0px;
+			cursor:hand;			
+			border:0px;
+}
+
+.tabla {
+	border:0px;
+	text-align:center;
+	width:100%;
+	text-valign:top;
+	color:#FFFFFF;
+	cursor:pointer;
+}
+
+.fondoerror{
+		background-image:url(/xescur/images/esquina_sup_izq_naranja.gif);
+		background-repeat:no-repeat;
+		border:0px solid #0066cc;
+		background-color:#ffe9bb;
+		padding:0px 10px;
+		margin:8px 0;
+		display:block;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size:11px; 
+		color: #FF0000 
+}
+
+/*********************************************************/
+/***** Para la pantalla de login de Recursos de Aula *****/
+/********************************************************/
+
+#centrado{
+	position:absolute;
+	top:50%;
+	left:50%;
+	height:20%;
+	width:20%;
+	margin:-10% 0 0 -10%;
+}
+
+.formu_login{
+	 background:transparent;
+	 display:block;
+	 padding:10px;
+	 margin:auto;
+	 color:#35699C;
+	 }
+						 
+body.login{
+	 padding:0px;
+	 margin:0px;
+	 height:100%;
+	 width:100%;
+	 text-align:center;
+	 background-image:url(/xescur/images/logo_fondo2.gif);
+	 background-position:50% 50%;
+	 background-repeat:no-repeat;			 
+}
+
+
+#fieldset_login{
+	border:1px solid #3E7CB9;
+}
+
+
+#contenedor_buscador{
+	height:100%;
+	width:100%;
+	}
+#tabla_resultados{
+	 height:100%;
+	width:100%;
+
+}

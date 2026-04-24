@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE taglib
+
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+
+  "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>Tag Library de utilidades de Aplicaciones Web</shortname>
+	<uri></uri>
+	<info></info>
+	<tag>
+		<name>isPar</name>
+		<tagclass>es.sdweb.application.vista.util.ParTag</tagclass>
+		<info></info>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>scope</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+	  <name>isImpar</name>
+	  <tagclass>es.sdweb.application.vista.util.ImparTag</tagclass>
+	  <info></info>
+	  <attribute>
+	    <name>name</name>
+	    <required>true</required>
+	    <rtexprvalue>true</rtexprvalue>
+	  </attribute>
+	  <attribute>
+	    <name>scope</name>
+	    <required>false</required>
+	    <rtexprvalue>true</rtexprvalue>
+	  </attribute>
+	</tag>
+	
+	
+	<tag>
+    <name>property</name>
+    <tagclass>es.sdweb.application.vista.util.PropertyTag</tagclass>
+    <info></info>
+    <attribute>
+      <name>do</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>type</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>format</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>property</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>default</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+	
+</taglib>

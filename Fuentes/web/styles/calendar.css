@@ -1,0 +1,145 @@
+/* Week Day Title - TD */
+
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+
+.input {
+	BORDER-RIGHT: #002969 1px solid; BORDER-TOP: #002969 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 10px; BORDER-LEFT: #002969 1px solid; COLOR: #002969; BORDER-BOTTOM: #002969 1px solid; valing: top; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+
+.calDatCtrl{
+	BORDER-RIGHT: #002969 1px solid; BORDER-TOP: #002969 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 10px; BORDER-LEFT: #002969 1px solid; COLOR: #002969; BORDER-BOTTOM: #002969 1px solid; valing: top; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+a.h:link{
+	
+	TEXT-DECORATION: none;
+}
+a.h:hover{
+	
+	TEXT-DECORATION: none;
+}
+a.h:active{
+	
+	TEXT-DECORATION: none;
+}
+a.h:visited{
+	TEXT-DECORATION: none;
+}
+
+.calWTitle {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 10px;
+	background: #ffffff;
+	text-align: center;
+	color: #0D355B;
+	font-weight: bold;
+	height: 15px;
+	width: 15px;
+}
+/*Today date*/
+.calDayToday
+{		
+	color:Black;
+	font-size: 10px;
+	font-weight:bolder;	
+	font-family: Verdana, Tahoma, sans-serif;
+	text-decoration: underline;	
+	width:15px;	
+	
+}
+/* Selected Date - TD */
+.calDayCurrent
+{
+	border-right: blue thin solid;
+	border-top: blue thin solid;
+	font-weight: bold;
+	font-size: 10px;
+	border-left: blue thin solid;
+	border-bottom: blue thin solid;
+	font-style:normal;
+	font-family: Verdana, Tahoma, sans-serif;
+	text-decoration: underline;
+	width:15px;
+	color:Black;
+}
+/* Sat. and Sun. - TD */
+.calDayWeekend
+{
+	font-weight: bold;
+	font-size: 10px;
+	font-family: Verdana, Tahoma, sans-serif;
+	color:red;
+	
+}
+/* Sat. and Sun. - TD */
+.calDayHoliday
+{
+	color:red;
+	width: 10px;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+
+/* Not Sat. and Sun. - TD */
+.calDayWorking 
+{	
+	color:Black;
+	background: #FFFFFF;
+	width: 10px;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+/* Days of current month - A */
+.calThisMonth {
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	font-weight:normal;
+}
+
+/* Days of other month - A */
+.calOtherMonth {
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 10px;
+	color: Gray;
+}
+/* Days not alloved by limits - SPAN */
+.calForbDate {
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	font-weight:bold;
+}
+/* Year select box - SELECT */
+.calYearselector {
+	width:100%;
+}
+/* Month select box - SELECT */
+.calMonthselector {
+	width:100%;
+}
+/* Hours, minutes & seconds select box - SELECT */
+.calTimeselector{
+	width: 45px;
+}
+/* Time navigation table - TABLE */
+.calTimetable{
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 12px;
+}
+.calDataTitle{
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+
