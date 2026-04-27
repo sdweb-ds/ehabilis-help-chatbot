@@ -8,4 +8,4 @@ Instituto Galego de Promoción Económica (IGAPE)
 
 **Financiación**: Este proyecto ha sido financiado por la Unión Europea – NextGenerationEU, a través del Plan de Recuperación, Transformación y Resiliencia (PRTR) y apoyado por el Instituto Galego de Promoción Económica (IGAPE) dentro de la convocatoria de Ayudas IA360 para el desarrollo tecnológico y la innovación mediante el uso de la Inteligencia Artificial.
 
-![Logo Financiación](https://www.sdweb.es/sites/default/files/imagen.jpg)
+![Logo Financiación](./Fuentes/web/images/logo_financiacion.jpg)
